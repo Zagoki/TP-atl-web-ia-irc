@@ -1,0 +1,160 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Barre de navigation */
+  header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #accueil {
+    background-color: #f0f0f0;
+    padding: 80px 20px;
+    border-radius: 10px;
+  }
+  
+  /* Chat */
+  #chat-box {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #input-box {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  #input-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  #input-box button {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #input-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style des messages */
+  .message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Messages utilisateur */
+  .user {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  /* Messages de l'IA */
+  .ai {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+  }
+  
+  /* Messages d'erreur */
+  .error {
+    background-color: #ffcccc;
+    color: #900;
+    align-self: flex-start;
+    font-style: italic;
+  }
+  
+  /* Animation des messages */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Sections "À propos" et "Contact" */
+  #about, #contact {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  

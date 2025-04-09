@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat avec ma superbe IA trop cool</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  
+  <!-- Barre de navigation -->
+  <header>
+    <h1>Chat IA bb</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#chat">Chat</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil">
+    <h2>Bienvenue !</h2>
+    <p>Discutez avec une intelligence artificielle, lente mais ça marche donc on s'en fout.</p>
+  </section>
+
+  <!-- Section Chat -->
+  <section id="chat">
+    <div id="chat-box"></div>
+    <div id="input-box">
+      <input type="text" id="user-input" placeholder="Écrivez votre question...">
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+  </section>
+
+  <!-- Section Conversations -->
+  <section id="conversations">
+    <h2>Conversations</h2>
+    <div id="conversation-list"></div>
+    <form id="new-conversation-form" onsubmit="createConversation(event)">
+      <input type="text" id="new-conversation-title" placeholder="Titre de la nouvelle conversation" required>
+      <button type="submit">Créer</button>
+    </form>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Mon chatbot utilise des technologies avancées.</p>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Vous avez des questions ? m'en fous.</p>
+  </section>
+
+</body>
+</html>
